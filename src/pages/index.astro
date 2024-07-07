@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Image from 'astro/components/Image.astro';
+
+import GitHub from '../icons/GitHub.astro';
+import Email from '../icons/Email.astro';
+import Arrow from '../icons/Arrow.astro';
+---
+
+<Layout title="Welcome to Astro.">	
+	<main class="flex items-center h-[89vh] text-SpringWood">
+		<div class="absolute h-[89vh] -z-10 w-full bg-slate-950 bg-Grafito">
+			<div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
+			</div>
+		</div>
+		
+		<section class="mx-5 sm:mx-auto sm:max-w-5xl">
+			<div transition:name="titulos" class="mb-4 sm:mb-6">
+				<h1 class="text-3xl font-bold mb-1 sm:text-5xl">Hozmel De la Rosa</h1>
+				<p class="text-base text-TextOpacity font-bold sm:text-lg">Estudiante y desarrollador de software</p>
+			</div>
+			<section class="flex flex-col items-center gap-5 sm:gap-10 sm:flex-row">
+				<Image 
+					class="w-36 rounded-full sm:hidden" 
+					src="/avatar.jpg" 
+					alt="Foto de Hozmel" 
+					width={960} 
+					height={961}
+					loading="lazy" 
+					transition:name='avatar'
+				/>
+				<div>
+					<div class="mb-3">
+						<p class="text-base font-medium sm:text-lg">
+							Hola, soy Hozmel, un estudiante mexicano a tiempo completo en la Licenciatura en Ciencias y Tecnologías de la Información en la UAGro, al que tambien le encanta aprender nuevas tecnologias de programación y así experimentar y crear cosas interesantes utilizando código. 
+						</p>
+					</div>
+					<div class="flex flex-row justify-center w-fit gap-8 mb-4 sm:flex-col sm:gap-1 sm:mb-7">
+						<a class="flex gap-3 items-center text-TextOpacity transition duration-300 ease-out hover:translate-x-0.5 hover:text-BluePrimary" href="">
+							<Email />
+							<div>
+								<p class="text-lg font-semibold">Correo</p>
+							</div>
+						</a>
+						<a class="flex gap-3 items-center text-TextOpacity transition duration-300 ease-out hover:translate-x-0.5 hover:text-BluePrimary" href="">
+							<GitHub />
+							<div>
+								<p class="text-lg font-semibold">GitHub</p>
+							</div>
+						</a>
+					</div>
+					<div class="flex gap-8">
+						<a class="arrow flex gap-2 text-lg text-TextOpacity transition duration-200 ease-linear hover:text-BluePrimary font-medium hover:underline" href="/about">
+							<div class="rotate">
+								<Arrow />
+							</div>
+							Mas Sobre Mi
+						</a>
+						<a class="arrow flex gap-2 text-lg text-TextOpacity transition duration-200 ease-linear hover:text-BluePrimary font-medium hover:underline" href="/project">
+							<div class="rotate">
+								<Arrow />
+							</div>
+							Mi Proyecto
+						</a>
+					</div>
+				</div> 
+				<Image transition:name="avatar image" loading="lazy" class="hidden w-52 rounded-full sm:block" src="/public/avatar.jpg" alt="Foto de Hozmel" width={960} height={961} />
+			</section>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.arrow:hover .rotate {
+		transform: rotate(-45deg);
+	}
+</style>

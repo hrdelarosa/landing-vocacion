@@ -1,0 +1,40 @@
+---
+import Image from "astro/components/Image.astro"
+---
+
+<section class="flex items-center justify-center h-[90vh]">
+    <div class="absolute h-full -z-10 w-full bg-Grafito">
+        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
+        </div>
+    </div>
+
+    <section class="mx-5 sm:mx-auto sm:max-w-5xl">
+        <div transition:name="proyecto titulo" class="mb-4 sm:mb-6">
+            <h1 class="text-3xl font-bold mb-1 sm:text-5xl">Información del Proyecto.</h1>
+            <h2 class="text-xl text-TextOpacity font-bold sm:text-3xl">Vocación Enigma.</h2>
+        </div>
+        <aside class="flex flex-col items-center sm:flex-col">
+            <div class="flex items-center">
+                <p class="text-base font-medium sm:text-lg">
+                    La elaboración del proyecto 'Vocación Enigma' surge para poder brindar una herramienta efectiva a los estudiantes de nivel medio superior de la Universidad Autónoma de Guerrero, para que puedan tomar decisiones informadas sobre su futuro académico y profesional. 
+                </p>
+                <Image 
+                    class="w-5/12 rounded-3xl hidden sm:block"
+                    src="/public/Captura de pantalla 1.png" 
+                    alt="Imagen de la Plataforma de Vocación Enigma." 
+                    width={1896}
+                    height={912}
+					loading="lazy" 
+                />
+            </div>
+            <p class="text-base font-medium sm:mt-5 sm:text-lg">
+                Reconociendo la importancia de elegir una carrera que se alinee con sus intereses, habilidades y aspiraciones, esta plataforma web ofrece una prueba de orientación vocacional diseñada para identificar las áreas de estudio más afines a cada individuo.
+            </p>
+        </aside>
+        <div class="flex mt-3 sm:mt-10">
+            <a class="bg-BlueSecondary text-Grafito font-bold px-7 py-3.5 rounded hover:bg-BluePrimary transition duration-300 ease-in" href="/project/questions">
+                Mas del Proyecto.
+            </a>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,75 @@
+---
+import Image from "astro/components/Image.astro"
+import Layout from "../layouts/Layout.astro"
+import HeroProject from "../components/Hero-Project.astro"
+---
+
+<Layout title="Informacion del Proyecto.">
+    <main class="text-SpringWood mx-5 mt-2 sm:mx-auto sm:max-w-5xl">
+
+        <HeroProject />
+
+        <section class="">
+            <h2 class="text-lg mb-4 text-TextOpacity font-bold sm:text-2xl">¿Por que utilizar Vocación Enigma?</h2>
+            <aside class="mb-2 gap-5 sm:gap-10 sm:flex-row sm:mb-6">
+                <p class="text-base font-medium sm:text-lg">
+                    El propósito de Vocación Enigma es proporcionar a los estudiantes una guía personalizada y confiable para explorar y entender las opciones académicas universitarias. La plataforma ofrece resultados detallados sobre áreas de estudio específicas, ayudando a visualizar posibles trayectorias educativas y profesionales. Se enfoca en que una decisión vocacional informada conduce a una mayor satisfacción y éxito en la vida. Además, al ser una plataforma web, garantiza accesibilidad para todos los estudiantes.
+                </p>
+        </section>
+
+        <aside class="mt-14 sm:mt-20">
+            <div class="grid grid-cols-2 items-center justify-between">
+                <h2 class="text-lg mb-4 text-TextOpacity font-bold sm:text-2xl">Mas Sobre la Prueba.</h2>
+                <hr class="w-full h-1 mx-auto my-4 bg-SpringWood border-0 rounded md:my-10 dark:bg-gray-700">
+            </div>
+            <section class="flex flex-col sm:grid grid-cols-2 items-center justify-between">
+                <div class="m-5">
+                    <Image 
+                        class="w-auto rounded-3xl"
+                        src="/public/Captura de pantalla 2.png" 
+                        alt="Imagen de la Plataforma de Vocación Enigma." 
+                        width={1896}
+                        height={912}
+					    loading="lazy"
+                    />
+                </div>
+                <div class="text-center">
+                    <p class="text-base font-medium sm:text-lg">
+                        "Vocación Enigma" se distingue por integrar la reconocida prueba de vocación CHASIDE, una herramienta que evalúa de manera integral las habilidades, intereses y aptitudes de los estudiantes. Esta integración permite ofrecer recomendaciones personalizadas sobre áreas de estudio y carreras universitarias que se alinean con las fortalezas y aspiraciones de cada usuario, brindando así una orientación vocacional precisa y efectiva.
+                    </p>
+                </div>
+            </section>
+            <!-- <hr class="w-full h-1 mx-auto my-4 bg-SpringWood border-0 rounded md:my-10 dark:bg-gray-700"> -->
+        </aside>
+
+        <aside class="mt-16 mb-12">
+            <div class="grid grid-cols-2 items-center justify-between">
+                <h2 class="text-lg mb-4 text-TextOpacity font-bold sm:text-2xl">Beneficios de Vocación Enigma.</h2>
+                <hr class="w-full h-1 mx-auto my-4 bg-SpringWood border-0 rounded md:my-10 dark:bg-gray-700">
+            </div>
+            <section class="px-5">
+                <ol class="list-decimal text-TextOpacity px-0 sm:px-5">
+                    <li class="text-base font-medium pb-3 sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Prueba de orientación vocacional personalizada:</strong> La plataforma ofrece una prueba que evalúa los intereses, habilidades y aptitudes de cada usuario, proporcionando resultados precisos y relevantes.</p>
+                    </li>
+                    <li class="text-base font-medium pb-3 sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Variedad de áreas de estudio:</strong> "Vocación Enigma" abarca una amplia gama de áreas de estudio, desde ciencias y tecnología hasta humanidades y artes, garantizando que cada usuario encuentre opciones que se ajusten a sus intereses y fortalezas individuales.</p>
+                    </li>
+                    <li class="text-base font-medium pb-3 sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Información sobre carreras:</strong> Además de recomendar áreas de estudio, la plataforma ofrece información sobre las diferentes carreras asociadas a cada área, ayudando a los usuarios a comprender mejor las posibilidades que les esperan en el futuro.</p>
+                    </li>
+                    <li class="text-base font-medium pb-3 sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Accesibilidad y comodidad:</strong> "Vocación Enigma" es una plataforma web fácil de usar, accesible desde cualquier dispositivo con conexión a internet. Esto permite a los usuarios realizar la prueba de orientación en su propio tiempo y lugar, sin necesidad de desplazarse a un centro de orientación vocacional.</p>
+                    </li>
+                    <li class="text-base font-medium pb-3 sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Integración con instituciones educativas:</strong> "Vocación Enigma" colabora estrechamente con la Universida Autónoma de Guerrero garantizar que los usuarios reciban el apoyo y la orientación necesarios para dar el siguiente paso en su trayectoria educativa. Esto incluye enlaces de Universidades y mas Información de ellas.</p>
+                    </li>
+                    <li class="text-base font-medium sm:text-lg">
+                        <p class="text-SpringWood"><strong class="text-TextOpacity">Enfoque en el bienestar estudiantil:</strong> La plataforma se preocupa por el bienestar integral de los estudiantes, no solo proporcionando orientación académica y profesional, sino también recursos y herramientas para apoyar su desarrollo personal y profesional.</p>
+                    </li>
+                </ol>
+            </section>
+            <!-- <hr class="w-full h-1 mx-auto my-4 bg-SpringWood border-0 rounded md:my-10 dark:bg-gray-700"> -->
+        </aside>
+    </main>
+</Layout>

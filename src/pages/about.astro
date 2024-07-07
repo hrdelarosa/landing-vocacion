@@ -1,0 +1,146 @@
+---
+import Image from "astro/components/Image.astro";
+import Layout from "../layouts/Layout.astro";
+
+import GitHub from "../icons/GitHub.astro";
+import Email from "../icons/Email.astro";
+import Phone from "../icons/Phone.astro";
+import Instagram from "../icons/Instagram.astro";
+import Facebook from "../icons/Facebook.astro";
+---
+
+<Layout title="Mas sobre Mi.">
+  <main class="flex items-center h-[89vh] text-SpringWood">
+    <div class="absolute h-[89vh] -z-10 w-full bg-slate-950 bg-Grafito">
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
+      >
+      </div>
+    </div>
+
+    <section class="mx-5 sm:mx-auto sm:max-w-5xl">
+      <div class="mb-4 sm:mb-6">
+        <div transition:name="titulos">
+          <h1 class="text-3xl font-bold mb-1 sm:text-5xl">Hozmel De la Rosa</h1>
+          <p class="text-base text-TextOpacity font-bold sm:text-lg">
+            Estudiante y desarrollador de software
+          </p>
+        </div>
+        <div class="sm:flex justify-between mt-2">
+          <p class="text-xs sm:text-sm text-SpringWood font-normal hover:text-BlueSecondary transition duration-300 ease-linear cursor-default">
+            <strong>Nombre:</strong> Hozmel Roberto De la Rosa Rendón
+          </p>
+          <p class="text-sm text-SpringWood font-normal hover:text-BlueSecondary transition duration-300 ease-linear cursor-default">
+            <strong>Nacimiento:</strong> 19 de Noviembre del 2002
+          </p>
+          <p class="hidden sm:block text-sm text-SpringWood font-normal hover:text-BlueSecondary transition duration-300 ease-linear cursor-default">
+            <strong>Nacionalidad:</strong> Mexicano
+          </p>
+          <p class="hidden sm:block text-sm text-SpringWood font-normal hover:text-BlueSecondary transition duration-300 ease-linear cursor-default">
+            <strong>Estado:</strong> Estudiante
+          </p>
+          <p class="hidden sm:block text-sm text-SpringWood font-normal hover:text-BlueSecondary transition duration-300 ease-linear cursor-default">
+            <strong>Edad:</strong> 21
+          </p>
+        </div>
+      </div>
+      <section class="flex flex-col items-center gap-5 sm:gap-10 sm:flex-row">
+        <div>
+          <div class="flex gap-5 mb-3">
+            <p class="text-sm font-medium sm:text-lg">
+              Fuera de los estudios soy un apasionado por el fútbol, soy un fiel
+              seguidor del FC Barcelona y considero a Messi como el mejor
+              jugador de la historia. También tengo una gran fascinación por los
+              coches y en especialmente la cultura japonesa de coches (JDM). <br
+                class="sm:block hidden"
+              />
+              Mi gusto por la música es muy variado, pero la música electrónica es
+              mi favorita, siendo High On Life de Martin Garrix mi canción favorita.
+              Cuando se trata de entretenimiento, prefiero las series sobre las películas,
+              y algunas de mis favoritas incluyen The Office, Brooklyn Nine-Nine
+              e Invincible. Estos son solo algunos aspectos de mi vida que me definen.
+            </p>
+            <Image
+              class="hidden w-52 rounded-full sm:block"
+              src="/public/avatar.jpg"
+              alt="Foto de Hozmel"
+              width={960}
+              height={961}
+              loading="lazy"
+              transition:name="avatar image"
+            />
+          </div>
+          <section class="grid grid-cols-2 sm:block">
+            <div
+              class="flex flex-col sm:grid grid-cols-3 justify-center w-fit gap-2 mb-4 sm:gap-5 sm:mb-7"
+            >
+              <a
+                class="flex gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <Email />
+                <div>
+                  <p class="text-lg font-semibold">Correo</p>
+                </div>
+              </a>
+              <a
+                class="flex gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <GitHub />
+                <div>
+                  <p class="text-lg font-semibold">GitHub</p>
+                </div>
+              </a>
+              <a
+                class="flex gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <Phone />
+                <div>
+                  <p class="text-lg font-semibold">Teléfono</p>
+                </div>
+              </a>
+              <a
+                class="flex gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <Instagram />
+                <div>
+                  <p class="text-lg font-semibold">Instagram</p>
+                </div>
+              </a>
+              <a
+                class="hidden sm:flex gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <Facebook />
+                <div>
+                  <p class="text-lg font-semibold">Facebook</p>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-col sm:hidden">
+              <a
+                class="flex sm:hidden gap-3 items-center text-TextOpacity transition duration-200 ease-out hover:translate-x-0.5- hover:text-BluePrimary"
+                href=""
+              >
+                <Facebook />
+                <div>
+                  <p class="text-lg font-semibold">Facebook</p>
+                </div>
+              </a>
+              <Image
+                class="w-28 rounded-full mt-1 sm:hidden"
+                src="/avatar.jpg"
+                alt="Foto de Hozmel"
+                width={960}
+                height={961}
+              />
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+  </main>
+</Layout>

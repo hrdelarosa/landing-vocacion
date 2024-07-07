@@ -1,0 +1,115 @@
+---
+import Image from "astro/components/Image.astro";
+import Email from "../icons/Email.astro";
+import Icon from "../icons/Icon.astro";
+---
+
+<nav class="bg-Grafito text-SpringWood">
+  <div
+    class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4"
+  >
+    <a
+      class="flex hover:text-BlueSecondary text-SpringWood transition duration-300 ease-in items-center space-x-3 rtl:space-x-reverse"
+      href="/"
+    >
+      <Image
+        class="w-12 transition duration-300 ease-in hover:scale-105 hover:rotate-2"
+        src="/public/prompt.svg"
+        alt="Foto de Hozmel"
+        width={24}
+        height={24}
+      />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap"
+        >Hoz</span
+      >
+    </a>
+    <div
+      class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse text-TextOpacity transition-colors duration-300 ease hover:text-SpringWood"
+    >
+      <a
+        class="md:block hidden transition duration-300 ease hover:scale-110 hover:rotate-2"
+        href=""
+      >
+        <Email />
+      </a>
+
+      <div
+        class="items-center justify-between mb-2 w-full md:hidden md:w-auto md:order-1 flex"
+      >
+        <ul
+          class="flex flex-row items-center mt-4 font-medium md:mt-0 md:space-x-8 rtl:space-x-reverse"
+        >
+          <li
+            class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+          >
+            <a
+              class="block py-2 px-2 text-base font-bold md:font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+              href="/"
+            >
+              Inicio
+            </a>
+          </li>
+          <li
+            class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+          >
+            <a
+              class="block py-2 px-2 text-base font-bold md:font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+              href="/about"
+            >
+              Acerca
+            </a>
+          </li>
+          <li
+            class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+          >
+            <a
+              class="block py-2 px-2 text-base font-bold md:font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+              href="/project"
+            >
+              Proyecto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden"
+    >
+      <ul
+        class="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse"
+      >
+        <li
+          class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+        >
+          <a
+            class="block py-2 px-3 text-lg font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+            href="/"
+          >
+            Inicio
+          </a>
+        </li>
+        <li
+          class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+        >
+          <a
+            class="block py-2 px-3 text-lg font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+            href="/about"
+          >
+            Acerca
+          </a>
+        </li>
+        <li
+          class="text-TextOpacity transition-colors duration-300 ease-linear hover:text-BlueSecondary"
+        >
+          <a
+            class="block py-2 px-3 text-lg font-semibold transition duration-300 ease-linear md:border-0 md:hover:text-BluePrimary md:p-0"
+            href="/project"
+          >
+            Proyecto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
